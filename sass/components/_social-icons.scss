@@ -1,0 +1,47 @@
+.social-icons {
+  display: inline-flex;
+
+  &__link {
+    @include centeredflex();
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--white);
+    transition: background-color var(--transition-duration-tfunction), fill var(--transition-duration-tfunction);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link:hover &__svg,
+  &__link:focus &__svg {
+    fill: var(--white);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--accent);
+  }
+
+  &__svg {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill var(--transition-duration-tfunction);
+  }
+
+  &__svg--inverse {
+    fill: var(--white);
+  }
+
+  &__link--inverse {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-duration-tfunction);
+  }
+
+  &__link-inverse:hover,
+  &__link-inverse:focus {
+    background-color: var(--accent);
+  }
+}

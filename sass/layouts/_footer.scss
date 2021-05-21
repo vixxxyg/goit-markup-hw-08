@@ -1,0 +1,41 @@
+.footer__container {
+  display: flex;
+}
+
+.page-footer {
+  background-color: var(--bgc-secondary);
+
+  &__contacts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: 70px;
+  }
+
+  &__address {
+    font-style: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__location {
+    color: var(--white);
+    font-weight: normal;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+
+  &__socials {
+    padding-top: 72px;
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+}

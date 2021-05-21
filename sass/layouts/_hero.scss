@@ -1,0 +1,24 @@
+.hero {
+  background-color: var(--bgc-secondary);
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  &__container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  &__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: var(--white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    max-width: 696px;
+  }
+}

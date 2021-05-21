@@ -1,0 +1,44 @@
+.our-features {
+  padding-bottom: 0px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+
+  &__item {
+    margin-left: 30px;
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+
+  &__container {
+    @include centeredflex();
+    width: 270px;
+    height: 120px;
+    background-color: var(--bgc-third);
+    margin-bottom: 30px;
+  }
+
+  &__svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: normal;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    width: 270px;
+    height: 75px;
+  }
+}
