@@ -39,11 +39,28 @@
     transition: color var(--transition-duration-tfunction);
     padding-top: 0px;
     padding-bottom: 0px;
+    margin-left: auto;
 
     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
       font-size: 12px;
       line-height: 1.2;
       letter-spacing: 0.02em;
+    }
+  }
+
+  .mail-svg,
+  .mail-icon {
+    @media screen and(min-width: 768px) and (max-width: 1199.98px) {
+      width: 14px;
+      height: 10px;
+    }
+  }
+
+  .mobile-svg,
+  .mobile-icon {
+    @media screen and(min-width: 768px) and (max-width: 1199.98px) {
+      width: 10px;
+      height: 14px;
     }
   }
 
