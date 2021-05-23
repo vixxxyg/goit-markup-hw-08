@@ -914,7 +914,6 @@ textarea::placeholder {
 .checkbox__link {
   display: inline-block;
   color: var(--accent);
-  margin-left: 5px;
 }
 
 .checkbox:checked + .checkbox__label::before {
