@@ -187,7 +187,6 @@ textarea::placeholder {
   &__link {
     display: inline-block;
     color: var(--accent);
-    margin-left: 5px;
   }
 
   &:checked + &__label::before {
