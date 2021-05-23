@@ -5,8 +5,13 @@
   padding-bottom: 0px;
 
   &__container {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
   }
 
   &__title {
@@ -15,10 +20,16 @@
     margin-bottom: 30px;
     color: var(--white);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.6;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    max-width: 696px;
+    max-width: 360px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.4;
+      max-width: 696px;
+    }
   }
 }

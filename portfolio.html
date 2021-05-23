@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
@@ -17,27 +18,68 @@
     <!-- Шапка сайта -->
     <header class="page-header">
         <div class="container">
-            <nav class="page-header__nav">
-                <a href="./index.html" class="logo logo__page-header link" lang="en"><span class="web">Web</span>Studio</a>
-                <ul class="list site-nav">
-                    <li class="site-nav__item"><a href="./index.html" class="link site-nav__link">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link site-nav__link--current">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="link site-nav__link">Контакты</a></li>
+            <a href="./index.html" class="logo logo__page-header link" lang="en"><span class="web">Web</span>Studio</a>
+            <div class="nav-contacts">
+                <nav class="page-header__nav">
+                    <ul class="list site-nav">
+                        <li class="site-nav__item"><a href="./index.html"
+                                class="link site-nav__link">Студия</a></li>
+                        <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link site-nav__link--current">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="" class="link site-nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="list contacts-header">
+                    <li class="contacts-header__item">
+                        <a href="mailto:info@devstudio.com" class="link contacts-header__mail"> <svg
+                                class="contacts-header__svg" width="16px" height="12px">
+                                <use href="./images/icons/sprite2.svg#icon-envelope" class="contacts-header__icon"></use>
+                            </svg> info@devstudio.com </a>
+                    </li>
+    
+                    <li class="contacts-header__item">
+                        <a href="tel:+380961111111" class="link contacts-header__mobile"> <svg class="contacts-header__svg"
+                                width="10px" height="16px">
+                                <use href="./images/icons/sprite2.svg#icon-smartphone" class="contacts-header__icon"></use>
+                            </svg> +38 096 111 11 11 </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="mobile-menu__button" data-menu-button>
+                <svg class="mobile-menu__icon" widthh="40px" height="40px">
+                    <use class="mobile-menu__icon-menu" href="./images/icons/sprite2.svg#icon-menu"></use>
+                    <use class="mobile-menu__icon-close" href="./images/icons/sprite2.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu__container" data-menu>
+            <nav class="nav-menu">
+                <ul class="list">
+                    <li class="mobile-nav__item"><a href="./index.html"
+                            class="link mobile-nav__link mobile-nav__link">Студия</a></li>
+                    <li class="mobile-nav__item"><a href="./portfolio.html" class="link mobile-nav__link mobile-nav__link--current">Портфолио</a></li>
+                    <li class="mobile-nav__item"><a href="" class="link mobile-nav__link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="list contacts-header">
-                <li class="contacts-header__item">
-                    <a href="mailto:info@devstudio.com" class="link contacts-header__mail"> <svg
-                            class="contacts-header__svg" width="16px" height="12px">
-                            <use href="./images/icons/sprite2.svg#icon-envelope" class="contacts-header__icon"></use>
-                        </svg> info@devstudio.com </a>
+            <ul class="list mobile-contacts">
+                <li class="mobile-contacts__item">
+                    <a href="tel:+380961111111" class="link mobile-contacts__link"> +38 096 111 11 11 </a>
                 </li>
-    
-                <li class="contacts-header__item">
-                    <a href="tel:+380961111111" class="link contacts-header__mobile"> <svg class="contacts-header__svg"
-                            width="10px" height="16px">
-                            <use href="./images/icons/sprite2.svg#icon-smartphone" class="contacts-header__icon"></use>
-                        </svg> +38 096 111 11 11 </a>
+                <li class="mobile-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="link mobile-contacts__link"> info@devstudio.com </a>
+                </li>
+            </ul>
+            <ul class="list mobile-socials">
+                <li class="mobile-socials__item">
+                    <a href="#" class="link mobile-socials__link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </li>
+                <li class="mobile-socials__item">
+                    <a href="#" class="link mobile-socials__link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
+                <li class="mobile-socials__item">
+                    <a href="#" class="link mobile-socials__link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </li>
+                <li class="mobile-socials__item">
+                    <a href="#" class="link mobile-socials__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </li>
             </ul>
         </div>
@@ -65,7 +107,7 @@
                     </li>
                 </ul>
 
-                <ul class="list products card-set">
+                <ul class="list products">
                     <li class="products__item">
                         <a class="products__card-link" href="">
                         <div class="products__thumb">
@@ -287,6 +329,6 @@
                     </form>
                 </div>
             </footer>
-
+<script src="./js/menu.js"></script>
 </body>
 </html>

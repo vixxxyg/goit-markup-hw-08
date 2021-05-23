@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  // outline: 1px solid crimson;
 }
 
 body {
@@ -51,7 +52,8 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  // max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -67,8 +69,13 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .site-nav,
@@ -95,15 +102,6 @@ img {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-}
-.our-job__title,
-.our-team__title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .job,

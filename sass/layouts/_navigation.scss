@@ -1,4 +1,16 @@
 .site-nav {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
+
   &__link {
     transition: var(--transition-duration-tfunction);
   }

@@ -2,21 +2,44 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    line-height: 1.4;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
+
   &__page-header {
     color: #000000;
-    margin-right: 93px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
   }
 
   &__page-footer {
     color: var(--white);
     display: block;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      text-align: center;
+    }
   }
 }
 

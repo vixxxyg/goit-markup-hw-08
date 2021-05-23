@@ -1,5 +1,13 @@
 .footer__container {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .page-footer {
@@ -8,13 +16,30 @@
   &__contacts {
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: 70px;
+
+    @media screen and (max-width: 767.98px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 50%;
+      // margin-right: 165px;
+      // margin-left: 76px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
   }
 
   &__address {
     font-style: inherit;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 1199.98px) {
+      text-align: center;
+    }
   }
 
   &__location {
@@ -25,8 +50,20 @@
   }
 
   &__socials {
-    padding-top: 72px;
-    padding-bottom: 100px;
+    @media screen and (min-width: 768px) {
+      width: 50%;
+      padding-top: 65px;
+      padding-bottom: 102px;
+    }
+
+    @media screen and (max-width: 1199.98px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 72px;
+      padding-bottom: 100px;
+    }
   }
 
   &__title {
