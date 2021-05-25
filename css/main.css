@@ -242,7 +242,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .logo__page-header {
-    margin-right: 93px;
+    margin-right: 0px;
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -644,6 +644,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
+  padding: 10px 28px 10px 29px;
 }
 
 .subscribe-section__btn:hover .subscribe-section__svg,
@@ -974,10 +975,10 @@ textarea::placeholder {
 
 .mobile-menu__container {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: var(--white);
   z-index: 1;
@@ -1033,6 +1034,11 @@ textarea::placeholder {
   color: var(--accent);
 }
 
+.socials-menu {
+  position: absolute;
+  bottom: 48px;
+}
+
 .mobile-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -1054,6 +1060,8 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 64px;
 }
 
@@ -1062,8 +1070,6 @@ textarea::placeholder {
   line-height: 1;
   letter-spacing: 0.02em;
   color: var(--accent);
-  padding-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transition: color var(--transition-duration-tfunction);
   transition: color var(--transition-duration-tfunction);
 }
@@ -1072,8 +1078,10 @@ textarea::placeholder {
   color: inherit;
 }
 
-.mobile-socials__item:not(:first-child) {
-  padding-left: 10px;
+.mobile-socials__item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .page-header {
@@ -1105,6 +1113,18 @@ textarea::placeholder {
   display: flex;
 }
 
+@media screen and (min-width: 1200px) {
+  .nav-contacts {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header {
+    margin-left: 305px;
+  }
+}
+
 @media screen and (max-width: 767.98px) {
   .site-nav {
     display: none;
@@ -1119,7 +1139,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 1200px) {
   .site-nav {
-    margin-right: 305px;
+    margin-right: 0px;
   }
 }
 
@@ -1207,6 +1227,12 @@ textarea::placeholder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -30px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .features {
+    padding-bottom: 60px;
+  }
 }
 
 .features__item {
@@ -1582,6 +1608,7 @@ textarea::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-width: 231px;
 }
 
 @media screen and (max-width: 1199.98px) {

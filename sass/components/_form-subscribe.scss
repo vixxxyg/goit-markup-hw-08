@@ -74,6 +74,7 @@
   &__btn {
     @include centeredflex(inline-flex);
     border: none;
+    padding: 10px 28px 10px 29px;
   }
 
   &__btn:hover &__svg,

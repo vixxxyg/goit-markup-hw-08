@@ -35,10 +35,10 @@
 
 .mobile-menu__container {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: var(--white);
   z-index: 1;
@@ -89,6 +89,11 @@
   }
 }
 
+.socials-menu {
+  position: absolute;
+  bottom: 48px;
+}
+
 .mobile-contacts {
   &__item:not(:last-child) {
     margin-bottom: 32px;
@@ -110,6 +115,7 @@
 
 .mobile-socials {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 64px;
 
   &__link {
@@ -117,8 +123,6 @@
     line-height: 1;
     letter-spacing: 0.02em;
     color: var(--accent);
-    padding-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
     transition: color var(--transition-duration-tfunction);
   }
 
@@ -127,7 +131,9 @@
     color: inherit;
   }
 
-  &__item:not(:first-child) {
-    padding-left: 10px;
+  &__item:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }

@@ -23,8 +23,6 @@
 
     @media screen and (min-width: 768px) {
       width: 50%;
-      // margin-right: 165px;
-      // margin-left: 76px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -36,6 +34,7 @@
     font-style: inherit;
     display: flex;
     flex-direction: column;
+    min-width: 231px;
 
     @media screen and (max-width: 1199.98px) {
       text-align: center;
